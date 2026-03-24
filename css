@@ -1,0 +1,14 @@
+window.onload = function () {
+    // 🌺 Lilies
+    const container = document.getElementById("petals");
+
+    for (let i = 0; i < 20; i++) {
+        let petal = document.createElement("span");
+
+        petal.style.left = Math.random() * 100 + "vw";
+        petal.style.animationDuration = (4 + Math.random() * 6) + "s";
+
+        container.appendChild(petal);
+    }
+
+};
